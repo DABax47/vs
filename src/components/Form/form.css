@@ -1,4 +1,4 @@
-#signup {
+/* #signup {
   width: 24em;
   height: 20em;
   box-shadow: 3px 3px 3px;
@@ -7,7 +7,7 @@ animation-duration: .5s;
 animation-timing-function: ease;
 }
 #form-cnt {
-  /* border: solid #f1c531 2px; */
+
 }
 ::placeholder{
   color: #ecdaed;
@@ -27,7 +27,7 @@ animation-timing-function: ease;
   width: 10em;
   margin: auto;
   transition-duration: .4s;
-  
+
 }
 #signup-btn:hover{
   	background-color:rgba(3,3,3,.08);
@@ -59,4 +59,4 @@ opacity: 1;
       box-shadow: 3px 3px 3px;
   }
 
-}
+} */
