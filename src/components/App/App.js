@@ -1,13 +1,18 @@
+<<<<<<< HEAD
 import React, { Component } from "react";
 import Form from "../Form/Form";
 import Roster from "../Roster/Roster";
 import Match from "../Match/Match";
 import Nav from "../Nav/Nav";
 import split from "../../helpers/splitplayers.js";
+=======
+import React, { useState } from "react";
+>>>>>>> c9cef1cd5c8ae1daf2bfd0f3c55c3dcedf1685f0
 // Router
 // <BrowserRouter basename="/course-directory">
 //use this to add a  base router when sereved from a sub directory
 //use HashRouter instead much simpler
+<<<<<<< HEAD
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 // css
 import "./app.css";
@@ -169,4 +174,59 @@ class App extends Component {
     );
   }
 }
+=======
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import "./app.css";
+import Form from "../Form/Form";
+import Roster from "../Roster/Roster";
+import Navigation from "../Navigation/Navigation";
+// helper functions
+import shuffle from "../../helpers/shuffle.js";
+/*
+get TeamName from user input
+create a Roster from the Teams
+on click of "Start" button
+shuffle roster
+create first Match
+LOOP[
+display First Match
+click Team to determine winner
+Next Team enters to play winner displays
+] LOOP
+when no more matches display Winner
+
+
+Reset Route
+if reset is clicked dump all data and return to registraion page
+
+*/
+const App = () => {
+  const [roster, addPlayer] = useState([]);
+  const [player, setPlayer] = useState();
+
+  const StartGame = () => {
+    console.log("starting...");
+    let shuffledTeams = shuffle(roster);
+    console.log(shuffledTeams);
+  };
+  return (
+    <div id="app-wrapper" className=" d-flex flex-wrap ">
+      <div className="w-50 h-75 container">
+        <Form
+          roster={roster}
+          addPlayer={addPlayer}
+          totalTeams={roster.length}
+        />
+      </div>
+      <div className="w-50 h-75 container">
+        <Roster roster={roster} />
+      </div>
+      <div className="  container">
+        <Navigation StartGame={StartGame} />
+      </div>
+    </div>
+  );
+};
+
+>>>>>>> c9cef1cd5c8ae1daf2bfd0f3c55c3dcedf1685f0
 export default App;

@@ -1,5 +1,8 @@
-// import split from "./splitplayers.js";
+/**
+* create Match will create the first match from the shuffled roster
+*@params --- array [] the suffledRoster
 
+*/
 const createMatch = (L1, L2) => {
   let singleMatch = [];
 

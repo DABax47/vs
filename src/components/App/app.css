@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   padding: 0;
   margin: 0;
@@ -7,10 +8,18 @@
   background-image: url("./../../img/ram.svg");
   background-repeat: no-repeat;
   background-position: top -1em left 12em;
+=======
+#app-wrapper {
+  background-image: url("../../assets/ram.svg");
+  background-repeat: no-repeat;
+  /* background-position: top -1em left 12em; */
+  background-position: -125px -50px;
+>>>>>>> c9cef1cd5c8ae1daf2bfd0f3c55c3dcedf1685f0
   background-size: contain;
   background-color: rgb(110, 57, 112);
   height: 100vh;
   width: 100vw;
+<<<<<<< HEAD
   /* border: solid green 2px; */
 }
 
@@ -58,4 +67,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+=======
+  font-family: Ubuntu;
+  padding: 2% 4%;
+}
+#app-wrapper .container {
+  border: solid 1px;
+  background-color: #3f3543;
+>>>>>>> c9cef1cd5c8ae1daf2bfd0f3c55c3dcedf1685f0
 }

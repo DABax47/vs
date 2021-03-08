@@ -1,26 +1,62 @@
-#signup-form {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+/* #signup {
+  width: 24em;
+  height: 20em;
+  box-shadow: 3px 3px 3px;
+animation-name: rise;
+animation-duration: .5s;
+animation-timing-function: ease;
+}
+#form-cnt {
+
+}
+::placeholder{
+  color: #ecdaed;
 }
 
-#signup-form #signup-btn {
-  border: none;
-  transition: 0.3s;
-  text-transform: uppercase;
-  height: 35px;
-  border-radius: 0 5px 5px 0px;
-}
 input {
-  height: 35px;
+  height: 2em;
   border: none;
-  box-shadow: inset 1px 3px 5px black;
-}
-input[placeholder="Team Name"] {
-  border-radius: 5px 0 0 5px;
-  background: rgba(63, 53, 67, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
-  padding: 2%;
+  margin-top: 2px;
+animation-name: show;
+animation-duration: .6s;
+animation-timing-function: ease;
 }
+#signup-btn {
+  width: 10em;
+  margin: auto;
+  transition-duration: .4s;
+
+}
+#signup-btn:hover{
+  	background-color:rgba(3,3,3,.08);
+}
+
+input:focus {
+  outline: none;
+  transition-duration: 0.3s;
+  box-shadow: #f1c531 6px 3px 3px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+@keyframes show {
+  0%{
+    opacity: 0;
+  }
+  100%{
+opacity: 1;
+    }
+
+
+}
+@keyframes rise {
+  0%{
+      box-shadow:0px 0px 0px;
+  }
+  100%{
+      box-shadow: 3px 3px 3px;
+  }
+
+} */
